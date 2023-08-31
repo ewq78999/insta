@@ -12,3 +12,5 @@ class User(AbstractUser):
     # post_set = 
     # like_posts =
 
+    followings = models.ManyToManyField('self', related_name='followers', symmetrical=False)
+    # followers =
