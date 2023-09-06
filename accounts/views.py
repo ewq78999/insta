@@ -67,3 +67,5 @@ def follow(request, username):
         me.followings.add(you)
 
     return redirect('accounts:profile', username=username)
+
+
